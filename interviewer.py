@@ -19,14 +19,7 @@ model = model_from_json(model_json)
 model.load_weights("emotiondetector.h5")
 haar_file = cv2.data.haarcascades + 'haarcascade_frontalface_default.xml'
 face_cascade = cv2.CascadeClassifier(haar_file)
-def configure_engine(engine):
-    engine.setProperty('rate', 130)
-    engine.setProperty('volume', 0.8)
-    voices = engine.getProperty('voices')
-    engine.setProperty('voice', voices[1].id)
 
-# Assuming engine is already initialized elsewhere
-configure_engine(engine)
 
 
 labels = {0: 'angry', 1: 'disgust', 2: 'fear', 3: 'happy', 4: 'neutral', 5: 'sad', 6: 'surprise'}
