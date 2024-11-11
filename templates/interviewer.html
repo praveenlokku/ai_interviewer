@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview in Progress</title>
+    <link rel="stylesheet" href="/static/interviewer.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>Interview in Progress</h1>
+        </div>
+    </header>
+
+    <button class="Restart" onclick="restart()">Restart</button>
+    <button class="endinterview" onclick="end()">End Interview</button>
+
+    <main>
+        <div class="container">
+            <section id="video-container" class="form-section">
+                <h2>Smart Interviewer</h2>
+                <div id="videos">
+                    <div id="user-video-section">
+                        <img id="user-video" src="http://127.0.0.1:5000/video_feed" alt="User Video">
+                        <div class="video-controls">
+                            <button id="toggle-user-video" class="toggle-button" onclick="toggleVideo()">Turn Off Video</button>
+                            <button id="toggle-mute" class="toggle-button">Mute</button>
+                        </div>
+                    </div>
+                    <div id="ai-video-section">
+                        <img id="ai-image" alt="AI Video" src="/static/interviewer.png">
+                    </div>
+                </div>
+            </section>
+
+            <section id="question-container" class="form-section">
+                <h2>Questions</h2>
+                <p id="question-text">Loading question...</p>
+                <!-- Loading state -->
+                <div id="spinner" style="display: none;">Loading...</div>
+                <!-- Spinner -->
+            </section>
+
+            <section id="audio-container" class="form-section">
+                <h2>Microphone Access</h2>
+                <p>Your microphone is being accessed. Please speak into the microphone.</p>
+            </section>
+        </div>
+        <div id="timer">05:00</div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Interview System. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/static/interviewer.js"></script>
+</body>
+
+</html>

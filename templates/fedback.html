@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/fedback.css">
+    <title>Interview Summary</title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">AI Interview</div>
+        <nav>
+            <a href="/templates/home.html">Home</a>
+            <a href="/static/about.html">About</a>
+            <a href="/templates/index.html">Logout</a>
+        </nav>
+    </header>
+    <div class="summary">
+        <h1>Interview Summary</h1>
+        <h2>Hello, [User Name]!</h2>
+        <div class="overall-score">
+            <h3>Your Overall Score: </h3>
+            <div class="progress-bar">
+                <div class="progress" style="width: 80%;"></div>
+            </div>
+        </div>
+
+        <h3>Feedback</h3>
+        <div class="feedback">
+            <p>Strengths: Excellent communication skills, confidence.</p>
+            <p>Areas for Improvement: More examples in your answers.</p>
+        </div>
+
+        <h3>Detailed Analysis</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Question</th>
+                    <th>Your Response</th>
+                    <th>Feedback</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Tell me about yourself.</td>
+                    <td>I am a software engineer...</td>
+                    <td>Good structure but could be more concise.</td>
+                </tr>
+                <tr>
+                    <td>Why do you want this job?</td>
+                    <td>I am passionate about...</td>
+                    <td>Great enthusiasm!</td>
+                </tr>
+                <!-- More rows as needed -->
+            </tbody>
+        </table>
+
+        <div class="actions">
+            <button class="button" onclick="retake()">Retake Interview</button>
+            <button class="button" onclick="download()">Download Report</button>
+        </div>
+
+        <h3>Additional Resources</h3>
+        <ul>
+            <li><a href=" # ">Interview Preparation Guide</a></li>
+            <li><a href="# ">Common Interview Questions</a></li>
+            <li><a href="# ">Mock Interview Videos</a></li>
+        </ul>
+    </div>
+    <footer class="footer ">
+        <p>&copy; 2024 AI Interview System. All rights reserved.</p>
+    </footer>
+    <script>
+        function retake() {
+            window.location.href = "home.html";
+        }
+    </script>
+</body>
+
+</html>

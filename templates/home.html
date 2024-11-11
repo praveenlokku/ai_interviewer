@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Interview System</title>
+    <link rel="stylesheet" href="/static/home.css">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Interview System</h1>
+            <p>Welcome to the AI-powered interview system. Start by entering your details and selecting the difficulty level.</p>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="start-interview" class="form-section">
+                <h2>AI Interview</h2>
+                <form action="http://127.0.0.1:5000/check_interview" id="interview-form" method="POST">
+                    <label for="company">Company Name:</label>
+                    <input type="text" id="company" name="company" placeholder="e.g., Google / Microsoft" required>
+
+                    <label for="job-role">Job Role:</label>
+                    <input type="text" id="job-role" name="job-role" placeholder="e.g., Software Engineer" required>
+
+                    <label for="candidate-name">Your Name:</label>
+                    <input type="text" id="candidate-name" name="candidate-name" placeholder="e.g., John Doe" required>
+
+                    <button type="submit" id="start-interview-btn">Start Interview</button>
+                </form>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 AI Interview System. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
