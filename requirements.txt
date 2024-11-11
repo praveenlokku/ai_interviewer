@@ -1,0 +1,9 @@
+flask
+numpy
+keras
+pandas
+opencv-python
+pyttsx3
+tensorflow
+google.generativeai
+SpeechRecognition
