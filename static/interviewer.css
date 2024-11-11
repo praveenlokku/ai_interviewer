@@ -1,0 +1,214 @@
+        /* Reset some default styles */
+        
+        body,
+        h1,
+        h2,
+        p,
+        form,
+        input,
+        button {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        /* General styles */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f9fa;
+            color: #343a40;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            text-align: center;
+            margin: 0 auto;
+        }
+        /* Header styles */
+        
+        header {
+            background: #007bff;
+            color: #fff;
+            padding: 1.5rem 0;
+        }
+        
+        header h1 {
+            font-size: 2.2rem;
+        }
+        
+        header p {
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        /* Main section styles */
+        
+        main {
+            flex: 1;
+            padding: 2rem 0;
+        }
+        
+        .form-section {
+            background: #ffffff;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        h2 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+        
+        .endinterview {
+            width: 150px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .Restart {
+            width: 150px;
+            position: absolute;
+            top: 55px;
+            right: 5px;
+            background-color: red;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        .Restart:hover {
+            background-color: rgb(39, 30, 175);
+            /* Changes background color on hover */
+        }
+        
+        .endinterview:hover {
+            background-color: rgb(39, 30, 175);
+            /* Changes background color on hover */
+        }
+        /* Video and Audio sections */
+        
+        #video-container,
+        #audio-container {
+            margin-bottom: 1.5rem;
+        }
+        
+        #videos {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+        
+        #user-video-section,
+        #ai-video-section {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        #user-video-section video,
+        #ai-video-section img {
+            top: 2%;
+            transform: scaleX(-1);
+            width: 100%;
+            height: auto;
+            max-height: 350px;
+            object-fit: cover;
+        }
+        
+        .video-controls {
+            margin-top: 10px;
+        }
+        
+        .video-controls .toggle-button {
+            margin: 5px 0;
+        }
+        
+        .toggle-button {
+            padding: 0.7rem 1rem;
+            background: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        
+        .toggle-button:hover {
+            background: rgb(133, 197, 30);
+        }
+        /* Footer styles */
+        
+        footer {
+            background: #343a40;
+            color: #fff;
+            padding: 1rem 0;
+            text-align: center;
+        }
+        
+        #feedback-form {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+        
+        #feedback-form h2 {
+            margin-top: 0;
+        }
+        
+        #timer {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            padding: 5px 10px;
+            background: #000;
+            color: #fff;
+            font-size: 1.2em;
+            font-family: Arial, sans-serif;
+            border-radius: 5px;
+        }
+        /* Responsive design */
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+            header p {
+                font-size: 0.9rem;
+            }
+            .form-section {
+                padding: 1rem;
+            }
+            #videos {
+                flex-direction: column;
+            }
+            #user-video-section video,
+            #ai-video-section img {
+                max-height: 300px;
+            }
+        }
