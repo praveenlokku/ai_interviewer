@@ -6,12 +6,12 @@ const transcribedTextDiv = document.getElementById('transcribed-text');
 let videoOn = true; // Track the video state
 
 function end() {
-    window.location.href = "http://127.0.0.1:5000/templates/feedback.html";
+    window.location.href = "/feedback.html";
 }
 
 function restart() {
     alert("You are redirecting to home page, restart the interview again");
-    window.location.href = "http://127.0.0.1:5000/home";
+    window.location.href = "/home";
 }
 
 let timeLeft = 5 * 60; // 3 minutes
