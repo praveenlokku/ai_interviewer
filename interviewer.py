@@ -113,7 +113,12 @@ def index():
 
 @app.route('/video_feed')
 def video_feed():
-    return Response(interviewer(), mimetype='multipart/x-mixed-replace; boundary=frame')
+    try:
+        return Response(interviewer(), mimetype='multipart/x-mixed-replace; boundary=frame')
+    except Exception as e:
+        print(f"Error in video feed: {e}")
+        return "Error in video feed"
+
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0', debug=False)
