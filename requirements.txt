@@ -7,3 +7,4 @@ pyttsx3
 tensorflow
 google.generativeai
 SpeechRecognition
+pandas
