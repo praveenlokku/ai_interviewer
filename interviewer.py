@@ -1,5 +1,4 @@
 import cv2
-import pandas as pd
 import time
 import pyttsx3
 import threading
